@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Financeiro Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💰 Meu Financeiro</h1>
+        
+        <div class="balance-cards">
+            <div class="card income">
+                <h3>Entradas</h3>
+                <p id="total-income">R$ 0,00</p>
+            </div>
+            <div class="card outcome">
+                <h3>Saídas</h3>
+                <p id="total-outcome">R$ 0,00</p>
+            </div>
+        </div>
+
+        <form id="finance-form">
+            <input type="text" id="desc" placeholder="Descrição (ex: Mercado)" required>
+            <input type="number" id="amount" placeholder="Valor" required>
+            <select id="type">
+                <option value="income">Entrada</option>
+                <option value="outcome">Saída</option>
+            </select>
+            <button type="submit">Adicionar</button>
+        </form>
+
+        <ul id="transaction-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

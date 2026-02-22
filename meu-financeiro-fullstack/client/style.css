@@ -1,0 +1,88 @@
+body {
+  font-family: sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* ===== Container Principal ===== */
+.container {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Cabeçalho ===== */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* ===== Cartões de Saldo ===== */
+.balance-cards {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 1;
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+}
+
+.income {
+  background: #2ecc71;
+}
+
+.outcome {
+  background: #e74c3c;
+}
+
+/* ===== Formulário ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Botão */
+button {
+  background: #3498db;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+/* ===== Lista de Transações ===== */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
